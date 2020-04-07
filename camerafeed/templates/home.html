@@ -1,0 +1,354 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Feed</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!-- jQuery library -->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+
+</head>
+<body class="table-wrapper-scroll-y">
+    
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-dark default-color">
+        <form class="form-inline my-2 my-lg-0 ml-3 mr-auto">
+            <div class="">Select camera</div>
+            <select class="btn btn-outline-dark btn-md my-2 my-sm-0 ml-3">
+                <option selected>Balewadi</option>
+                <option value="1">Shivaji Nagar</option>
+                <option value="2">Chinchwad</option>
+                <option value="3">Nigdi</option>
+            </select>  
+        </form>            
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start container 1 -->
+    <div class="container-fluid">
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row mt-2" >
+          <div class="col-12 col-md-3" >
+            <!-- Table with panel -->
+            <div class="card card-cascade narrower">
+                <!-- Heading -->
+                <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">            
+                    <div href="" class="white-text mx-3">Suspected No plate</div>
+                </div>
+                <!-- End Heading -->
+            
+                <div class="px-4">
+                    <div class="table-wrapper table-responsive top-scrollbar table-wrapper-scroll-y" >
+                        <!--Table-->
+                        <table class="table table-bordered table-responsive-md table-striped text-center mb-0 " >
+                            <thead>
+                            <tr>
+                                <th class="text-center font-weight-bold">Image</th>
+                                <th class="text-center font-weight-bold">No Plate</th>
+                                <th class="text-center font-weight-bold">Type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate_4.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 48 BD 333</td>
+                                    <td class="pt-3-half" contenteditable="true">Bike</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number-plate-2.jpeg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate 3.png' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">UP 65 CW 9780</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>                      
+                            </tbody>
+                        </table>
+                        <!--Table-->
+                    </div>             
+                </div>         
+            </div>
+            <!-- Table with panel -->
+          </div>
+
+          <div class="col-12 col-md-6">
+            <!-- Card Wider -->
+            <div class="card card-cascade wider">
+                <!-- Title -->
+                <h4 class="card-title">Camera name</h4>
+                <!-- Card image -->
+                <div class="view view-cascade overlay" style="height:350px;">
+                    
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!-- Video Link -->
+                        <video class="embed-responsive-item video-fluid z-depth-1" autoplay loop controls muted>
+                            <source src="{% static '2020.mp4' %}" type="video/mp4" />
+                        </video>
+                        <!-- Video Link -->
+                    </div>
+                </div>
+            </div>
+            <!-- Card Wider -->
+          </div>
+
+          <div class="col-12 col-md-3">
+            <!-- Table with panel -->
+            <div class="card card-cascade narrower">
+
+                <!--Card heading-->
+                <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">            
+                    <div href="" class="white-text mx-3">RLVD</div>
+                </div>
+                <!--/Card heading-->
+            
+                <div class="px-4">            
+                    <div class="table-wrapper table-responsive top-scrollbar table-wrapper-scroll-y" >
+                        <!--Table-->
+                        <table class="table table-bordered table-responsive-md table-striped text-center" >
+                            <thead>
+                            <tr>
+                                <th class="text-center font-weight-bold">Image</th>
+                                <th class="text-center font-weight-bold">No Plate</th>
+                                <th class="text-center font-weight-bold">Type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate_4.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 48 BD 333</td>
+                                    <td class="pt-3-half" contenteditable="true">Bike</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number-plate-2.jpeg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate 3.png' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">UP 65 CW 9780</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                </tr>  
+                            </tbody>
+                        </table>
+                        <!--Table-->
+                    </div>            
+                </div>            
+            </div>
+            <!-- Table with panel -->
+          </div>
+        </div>
+    
+    </div>
+    <!-- End container 1 -->
+
+    <!-- Start Container 2 -->
+    <div class="container-fluid">
+      <div class="row mt-2" >
+        <div class="col-12 col-md-3" >
+          <!-- Table with panel -->
+          <div class="card card-cascade narrower">
+
+              <!--Card heading-->
+              <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">          
+                <div href="" class="white-text mx-3">Unrecognized No plate</div>
+              </div>
+              <!--/Card heading-->
+          
+              <div class="px-4">          
+                <div class="table-wrapper table-responsive bottom-scrollbar table-wrapper-scroll-y" >
+                    <!--Table-->
+                    <table class="table table-bordered table-responsive-md table-striped text-center mb-0" >
+                        <thead>
+                        <tr>
+                            <th class="text-center font-weight-bold">Image</th>
+                            <th class="text-center font-weight-bold">No Plate</th>
+                            <th class="text-center font-weight-bold">Type</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate_4.jpg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 48 BD 333</td>
+                                <td class="pt-3-half" contenteditable="true">Bike</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number-plate-2.jpeg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate 3.png' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">UP 65 CW 9780</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <!--Table-->
+                </div>          
+              </div>          
+          </div>
+          <!-- Table with panel -->
+        </div>
+
+        <div class="col-12 col-md-6">
+          <!-- Table with panel -->
+            <div class="card card-cascade narrower">        
+                <div class="px-4">        
+                    <div class="table-wrapper table-responsive bottom-scrollbar table-wrapper-scroll-y" style="height:400px;">
+                        <!--Table-->
+                        <table class="table table-bordered table-responsive-md table-striped text-center mb-0" >
+                            <thead>
+                            <tr>
+                                <th class="text-center font-weight-bold">Image</th>
+                                <th class="text-center font-weight-bold">No Plate</th>
+                                <th class="text-center font-weight-bold">Type</th>
+                                <th class="text-center font-weight-bold">Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate_4.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 48 BD 333</td>
+                                    <td class="pt-3-half" contenteditable="true">Bike</td>
+                                    <td class="pt-3-half" contenteditable="true">Out</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                    <td class="pt-3-half" contenteditable="true">In</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number-plate-2.jpeg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                    <td class="pt-3-half" contenteditable="true">Out</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate 3.png' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">UP 65 CW 9780</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                    <td class="pt-3-half" contenteditable="true">Out</td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                    <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                    <td class="pt-3-half" contenteditable="true">Car</td>
+                                    <td class="pt-3-half" contenteditable="true">In</td>
+                                </tr>  
+                            </tbody>
+                        </table>
+                        <!--Table-->
+                    </div>       
+                </div>       
+            </div>
+        <!-- Table with panel -->  
+        </div>
+
+        <div class="col-12 col-md-3">
+          <!-- Table with panel -->
+          <div class="card card-cascade narrower">
+
+              <!--Card heading-->
+              <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">          
+                <div href="" class="white-text mx-3">Out of state</div>
+              </div>
+              <!--/Card heading-->
+          
+              <div class="px-4">          
+                <div class="table-wrapper table-responsive bottom-scrollbar table-wrapper-scroll-y" >
+                    <!--Table-->
+                    <table class="table table-bordered table-responsive-md table-striped text-center" >
+                        <thead>
+                        <tr>
+                            <th class="text-center font-weight-bold" >Image</th>
+                            <th class="text-center font-weight-bold">No Plate</th>
+                            <th class="text-center font-weight-bold">Type</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate_4.jpg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 48 BD 333</td>
+                                <td class="pt-3-half" contenteditable="true">Bike</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number-plate-2.jpeg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate 3.png' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">UP 65 CW 9780</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true"><img class="card-img-top" style="width: 100px;" src="{% static 'images/number_plate.jpg' %}" alt="Card image cap"></td>
+                                <td class="pt-3-half" contenteditable="true">MH 14 U 1234</td>
+                                <td class="pt-3-half" contenteditable="true">Car</td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <!--Table-->
+                </div>         
+              </div>          
+          </div>
+          <!-- Table with panel -->
+        </div>
+      </div> 
+    </div>
+    <!-- End container 2 -->
+
+</div>
+    
+</body>
+</html>
